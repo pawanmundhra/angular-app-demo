@@ -1,0 +1,7 @@
+/* :host::ng-deep  */
+h1 {
+    background: blue;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+}

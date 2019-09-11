@@ -1,0 +1,18 @@
+<h1>{{referenceDataObj.title | uppercase}}</h1><br/><br/>
+{{referenceDataObj.screenList | referenceDataFilter}}
+<br/><br/>
+<div (click)="onDivClicked($event)">
+    <button class="btn" [ngClass]="{'active':false, 'btn-primary':true, 'btn-danger':false}">Button1</button>
+    <br/>
+    <br/>
+    <button class="btn" [ngClass]="getButtonList()" (click)="onButton2Click($event)">Button2</button>
+    <br/><br/>
+    Enter Email1 : <input type="text" (input)=onInput1Click($event) [ngModel]="email1">
+    <br/><br/>
+    Enter Email2 : <input type="text" [(ngModel)]="email2" (input)=onInput2Click($event) value="submit">
+    <br/><br/>
+    <img src={{imgSrc}}>
+</div>
+
+<!-- <app-account [accountPk]="accountPk" (passToParent)="passValueFromChildToParent($event)"></app-account> -->
+<!-- <app-customer [customerDataQualifier]="customerDataObj"></app-customer> -->
