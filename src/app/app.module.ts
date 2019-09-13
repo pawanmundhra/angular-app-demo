@@ -22,6 +22,8 @@ import { LoginReactiveComponent } from './login-reactive/login-reactive.componen
 import { ChangeDetectionComponent } from './change-detection/change-detection.component';
 import { ChangeDetectionChildComponent } from './change-detection/change-detection-child/change-detection-child.component';
 import { CustomReferenceDataPipe } from './reference-data/custom-reference-data.pipe';
+import { UserComponent } from './user/user.component';
+import { ReversePipe } from './shared/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { CustomReferenceDataPipe } from './reference-data/custom-reference-data.
     LoginReactiveComponent,
     ChangeDetectionComponent,
     ChangeDetectionChildComponent,
-    CustomReferenceDataPipe
+    CustomReferenceDataPipe,
+    UserComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

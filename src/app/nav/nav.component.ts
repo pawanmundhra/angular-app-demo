@@ -30,9 +30,4 @@ export class NavComponent implements OnInit {
     return '10px';
   }
 
-  getEnvironmentColor() {
-    return this.environmentColor;
-  }
-
-
 }

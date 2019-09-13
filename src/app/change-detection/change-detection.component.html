@@ -1,5 +1,11 @@
 <h1>Change Detection Component</h1>
+
+<input #newFruit type="text" placeholder="Enter a new fruits">
+<button (click)="addFruit(newFruit.value)">Add fruit</button>
+
+<P></P>
+
 <input #newFood type="text" placeholder="Enter a new food">
 <button (click)="addFood(newFood.value)">Add food</button>
-
-<app-change-detection-child [foodData]="foodsObj"></app-change-detection-child>
+<app-change-detection-child [foodData]="foodsObj" [fruitData]="fruitsObj"></app-change-detection-child>
+<!-- <app-change-detection-child [foodData]="foodsObj" [fruitData]="fruitsObj"></app-change-detection-child> -->
